@@ -60,11 +60,12 @@ name  = "example_${random_password.random_string.resulT}"  в конце resulT 
 ![image](https://github.com/user-attachments/assets/aaafc5df-588f-41df-aa61-38083ca7c976)  
 ![image](https://github.com/user-attachments/assets/2a412149-d0ad-4947-984e-1656b620d89c)  
   
-15. Объясните, почему при этом не был удалён docker-образ nginx:latest. Ответ ОБЯЗАТЕЛЬНО НАЙДИТЕ В ПРЕДОСТАВЛЕННОМ КОДЕ, а затем ОБЯЗАТЕЛЬНО ПОДКРЕПИТЕ строчкой из документации terraform провайдера docker. (ищите в классификаторе resource docker_image )
-
-```
-nekiy kod
-```
+15. Объясните, почему при этом не был удалён docker-образ nginx:latest. Ответ ОБЯЗАТЕЛЬНО НАЙДИТЕ В ПРЕДОСТАВЛЕННОМ КОДЕ, а затем ОБЯЗАТЕЛЬНО ПОДКРЕПИТЕ строчкой из документации terraform провайдера docker. (ищите в классификаторе resource docker_image )  
+Ответ:  
+Опция keep_locally = true ресурса "docker_image" "nginx" согласно документации означает, что образ контейнера не будет удалён при выполнении операции destroy.  
+  
+ "(Boolean) If true, then the Docker image won't be deleted on destroy operation. If this is false, it will delete the image from the docker local storage on destroy operation."  
+ 
 
 
 
