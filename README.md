@@ -56,9 +56,9 @@ name  = "example_${random_password.random_string.resulT}"  в конце resulT 
 Флаг -auto-approve может быть полезен в скриптах при автоматизации, когда результат заведомо известен.
 ![image](https://github.com/user-attachments/assets/9bf9b1f8-d7be-4fb1-9679-9ad3f28292a7)  
   
-13. Уничтожьте созданные ресурсы с помощью terraform. Убедитесь, что все ресурсы удалены. Приложите содержимое файла terraform.tfstate.
-![image](https://github.com/user-attachments/assets/aaafc5df-588f-41df-aa61-38083ca7c976)
-![image](https://github.com/user-attachments/assets/2a412149-d0ad-4947-984e-1656b620d89c)
+13. Уничтожьте созданные ресурсы с помощью terraform. Убедитесь, что все ресурсы удалены. Приложите содержимое файла terraform.tfstate.  
+![image](https://github.com/user-attachments/assets/aaafc5df-588f-41df-aa61-38083ca7c976)  
+![image](https://github.com/user-attachments/assets/2a412149-d0ad-4947-984e-1656b620d89c)  
   
 15. Объясните, почему при этом не был удалён docker-образ nginx:latest. Ответ ОБЯЗАТЕЛЬНО НАЙДИТЕ В ПРЕДОСТАВЛЕННОМ КОДЕ, а затем ОБЯЗАТЕЛЬНО ПОДКРЕПИТЕ строчкой из документации terraform провайдера docker. (ищите в классификаторе resource docker_image )
 
