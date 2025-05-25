@@ -30,10 +30,10 @@ Moiseenko A.N.
 7. Раскомментируйте блок кода, примерно расположенный на строчках 29–42 файла main.tf. Выполните команду terraform validate. Объясните, в чём заключаются намеренно допущенные ошибки. Исправьте их.
 ![image](https://github.com/user-attachments/assets/87ca65aa-79a4-41c3-aeb6-7e47f4e4f507)  
 
-Ответ:
-Первая ошибка - отсутствие имени у ресурса с типом "docker_image"
-Вторая ошибка - имя ресурса с типом "docker_container" начинается с цмфры "1nginx". Имя ресурса может начинаться либо с буквы либо со знака подчеркивания.
-Третья ошибка - в значении ключа "name" ресурса с типом "docker_container" "nginx" указана необъявленный ресурм с типом "random_password" "random_string_FAKE". Правильно будет указать name  = "example_${random_password.random_string.result}"
+Ответ:  
+Первая ошибка - отсутствие имени у ресурса с типом "docker_image"  
+Вторая ошибка - имя ресурса с типом "docker_container" начинается с цмфры "1nginx". Имя ресурса может начинаться либо с буквы либо со знака подчеркивания.  
+Третья ошибка - в значении ключа "name" ресурса с типом "docker_container" "nginx" указана необъявленный ресурм с типом "random_password" "random_string_FAKE". Правильно будет указать name  = "example_${random_password.random_string.result}"  
 
 
 
