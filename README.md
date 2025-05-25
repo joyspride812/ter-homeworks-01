@@ -17,7 +17,8 @@ Moiseenko A.N.
 ![image](https://github.com/user-attachments/assets/97706206-af10-40f9-b6c8-f49c60f64c7a)
 ![image](https://github.com/user-attachments/assets/cb0b0cec-4048-446f-9050-f2ca6322bbd9)
   
-3. Изучите файл .gitignore. В каком terraform-файле, согласно этому .gitignore, допустимо сохранить личную, секретную информацию?(логины,пароли,ключи,токены итд)  
+3. Изучите файл .gitignore. В каком terraform-файле, согласно этому .gitignore, допустимо сохранить личную, секретную информацию?(логины,пароли,ключи,токены итд)
+  
 Ответ:  
 Секретную информацию можно сохранить в файле personal.auto.tfvars  
    
@@ -32,8 +33,11 @@ Moiseenko A.N.
 
 Ответ:  
 Первая ошибка - отсутствие имени у ресурса с типом "docker_image"  
+  
 Вторая ошибка - имя ресурса с типом "docker_container" начинается с цмфры "1nginx". Имя ресурса может начинаться либо с буквы либо со знака подчеркивания.  
-Третья ошибка - в значении ключа "name" ресурса с типом "docker_container" "nginx" указана необъявленный ресурм с типом "random_password" "random_string_FAKE". Правильно будет указать name  = "example_${random_password.random_string.result}"  
+  
+Третья ошибка - в значении ключа "name" ресурса с типом "docker_container" "nginx" указан необъявленный ресур с типом "random_password" "random_string_FAKE". Правильно будет указать name  = "example_${random_password.random_string.result}"  
+  
 
 
 
